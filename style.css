@@ -37,8 +37,8 @@
 /* intro */
 
 .intro {
-    width: 100%;
-    width: 510px;
+    width: 33.3%;
+    min-width: 400px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -61,9 +61,8 @@
 
 .info {
     width: 100%;
-    width: 510px;
-    min-height: 240px;
-    margin-top: 38px;
+    min-height: 233px;
+    margin-top: 37px;
 }
 .info__item {
     display: flex;
@@ -76,11 +75,12 @@
 }
 .info__value {
     max-width: 205px;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
+    display: -webkit-box;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
 }
 
 /* Tech */
@@ -92,7 +92,7 @@
     opacity: 0.8;
 }
 .tech__range {
-    width: 460px;
+    width: 91%;
     height: 7px;
     background-color: #ffffff;
     opacity: 0.3;
@@ -108,20 +108,20 @@
     top: 35px;
 }
 .tech__range_internet-length {
-    width: 230px;
+    width: 46%;
 }
 .tech__range_social-length {
-    width: 100px;
+    width: 20%;
 }
 .tech__range_shopping-length {
-    width: 230px;
+    width: 46%;
 }
 
 /* information  */
 
 .information {
-    width: 100%;
-    width: 510px;
+    width: 33.3%;
+    min-width: 400px;
     padding-top: 63px;
     display: flex;
     flex-direction: column;
@@ -153,14 +153,12 @@
 /* photo */
 
 .photo {
-    width: 460px;
-    position: relative;
-    padding-top: 20px;  
-    margin: 0 auto;  
+    padding-top: 20px;
+    margin: 0 auto;
 }
 .photo__text {
     position: absolute;
-    bottom: 140px;
+    bottom: 85px;
     font-weight: 600;
     font-size: 30px;
     line-height: 35px;
@@ -168,9 +166,13 @@
     quotes: '“' '”';
     text-indent: -0.6em;
 }
+.photo__img-wrapper {
+    position: relative;
+}
 .photo__img {
     border: 1px transparent;
     border-radius: 7px;
+    object-fit: cover;
 }
 .photo__text::before {
     content: open-quote;
