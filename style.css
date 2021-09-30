@@ -115,7 +115,6 @@
 /* information  */
 
 .information {
-    width: 33.3%;
     min-width: 400px;
     padding-top: 63px;
     display: flex;
@@ -179,4 +178,9 @@
 }
 .photo__text::after {
     content: close-quote;
+}
+@media (max-width: 768px) {
+    .wrapper-content {
+        padding: 20px;
+    }
 }
